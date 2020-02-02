@@ -1,6 +1,7 @@
 module.exports = {
     parser: '@typescript-eslint/parser', // Specifies the ESLint parser
     extends: [
+        'eslint:recommended',
         'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
         'plugin:@typescript-eslint/recommended', // Uses the recommended rules from @typescript-eslint/eslint-plugin
     ],
@@ -14,7 +15,8 @@ module.exports = {
     rules: {
         // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
         // e.g. "@typescript-eslint/explicit-function-return-type": "off",
-        'no-use-before-define': ['error', { functions: false, classes: false }],
+        'no-use-before-define': ['warning', { functions: false, classes: true }],
+        '@typescript-eslint/no-empty-interface': 'off',
     },
     settings: {
         react: {

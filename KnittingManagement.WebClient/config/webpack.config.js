@@ -29,38 +29,6 @@ const postcssNormalize = require('postcss-normalize');
 
 const appPackageJson = require(paths.appPackageJson);
 
-const CSSModuleLoader = {
-    loader: 'css-loader',
-    options: {
-        modules: true,
-        sourceMap: true,
-        localIdentName: '[local]__[hash:base64:5]',
-        minimize: true,
-    },
-};
-
-const CSSLoader = {
-    loader: 'css-loader',
-    options: {
-        modules: false,
-        sourceMap: true,
-        minimize: true,
-    },
-};
-
-const postCSSLoader = {
-    loader: 'postcss-loader',
-    options: {
-        ident: 'postcss',
-        sourceMap: true,
-        plugins: () => [
-            autoprefixer({
-                browsers: ['>1%', 'last 4 versions', 'Firefox ESR', 'not ie < 9'],
-            }),
-        ],
-    },
-};
-
 // Source maps are resource heavy and can cause out of memory issue for large source files.
 const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 // Some apps do not need the benefits of saving a web request, so not inlining the chunk
@@ -106,12 +74,21 @@ module.exports = function(webpackEnv) {
     // common function to get style loaders
     const getStyleLoaders = (cssOptions, preProcessor) => {
         const loaders = [
+            // to inject the result into the DOM as a style block
             isEnvDevelopment && require.resolve('style-loader'),
             isEnvProduction && {
                 loader: MiniCssExtractPlugin.loader,
                 options: shouldUseRelativeAssetPaths ? { publicPath: '../../' } : {},
             },
+            // to generate a .d.ts module next to the .scss file
+            // (also requires a declaration.d.ts with "declare modules '*.scss';"
+            // in it to tell TypeScript that "import styles from './styles.scss';"
+            // means to load the module "./styles.scss.d.td")
+            { loader: 'css-modules-typescript-loader' },
             {
+                // to convert the resulting CSS to Javascript to be bundled
+                // (modules:true to rename CSS classes in output to cryptic identifiers,
+                // except if wrapped in a :global(...) pseudo class)
                 loader: require.resolve('css-loader'),
                 options: cssOptions,
             },
@@ -350,8 +327,9 @@ module.exports = function(webpackEnv) {
 
                 // First, run the linter.
                 // It's important to do this before Babel processes the JS.
+                // /\.(js|mjs|jsx|ts|tsx)$/,
                 {
-                    test: /\.(js|mjs|jsx|ts|tsx)$/,
+                    test: /\.(ts|tsx)$/,
                     enforce: 'pre',
                     use: [
                         {
@@ -360,23 +338,14 @@ module.exports = function(webpackEnv) {
                                 formatter: require.resolve('react-dev-utils/eslintFormatter'),
                                 eslintPath: require.resolve('eslint'),
                                 resolvePluginsRelativeTo: __dirname,
+                                configFile: path.resolve(__dirname, '../.eslintrc.js'),
                             },
                             loader: require.resolve('eslint-loader'),
                         },
                     ],
                     include: paths.appSrc,
+                    exclude: /node_modules/,
                 },
-
-                {
-                    test: /\.scss$/,
-                    exclude: /\.module\.scss$/,
-                    use: ['style-loader', CSSLoader, postCSSLoader, 'sass-loader'],
-                },
-                {
-                    test: /\.module\.scss$/,
-                    use: ['style-loader', CSSModuleLoader, postCSSLoader, 'sass-loader'],
-                },
-
                 {
                     // "oneOf" will traverse all following loaders until one will
                     // match the requirements. When no loader matches it will fall
@@ -485,8 +454,12 @@ module.exports = function(webpackEnv) {
                             exclude: sassModuleRegex,
                             use: getStyleLoaders(
                                 {
+                                    modules: true,
                                     importLoaders: 3,
                                     sourceMap: isEnvProduction && shouldUseSourceMap,
+                                    modules: {
+                                        getLocalIdent: getCSSModuleLocalIdent,
+                                    },
                                 },
                                 'sass-loader',
                             ),
@@ -503,6 +476,7 @@ module.exports = function(webpackEnv) {
                             use: getStyleLoaders(
                                 {
                                     importLoaders: 3,
+                                    modules: true,
                                     sourceMap: isEnvProduction && shouldUseSourceMap,
                                     modules: {
                                         getLocalIdent: getCSSModuleLocalIdent,
