@@ -3,7 +3,7 @@ using OrderService.DataAccess.Entities;
 
 namespace OrderService.DataAccess
 {
-    public class OrderContext : DbContext
+    public class OrderDbContext : DbContext
     {
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -9,7 +9,7 @@ using OrderService.DataAccess;
 
 namespace OrderService.DataAccess.Migrations
 {
-    [DbContext(typeof(OrderContext))]
+    [DbContext(typeof(OrderDbContext))]
     [Migration("20200201164311_InitialMigration")]
     partial class InitialMigration
     {

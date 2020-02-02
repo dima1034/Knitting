@@ -12,5 +12,7 @@ namespace OrderService.DataAccess.Entities
         public       int      customer_id      { get; set; }
         public       int      worker_id        { get; set; }
         public       int      clothes_id       { get; set; }
+        public       int      takes_time       { get; set; }
+        public       int      paid             { get; set; }
     }
 }
