@@ -3,6 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
+import { initializeIcons } from 'office-ui-fabric-react';
+
+initializeIcons();
+
+loadTheme({
+    palette: {
+        // neutralPrimary: 'yellow', // Used for button text
+        // neutralLighter: 'red', // Used for button backgrounds
+    },
+    defaultFontStyle: {
+        fontFamily: 'San Francisco',
+    },
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

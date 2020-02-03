@@ -5,17 +5,16 @@ import NewOrderComponent from './components/layouts/new-order/new-order.componen
 
 const App = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                {/* <img src={logo} className="App-logo" alt="logo" /> */}
-                <NewOrderComponent></NewOrderComponent>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+        <div id="container">
+            {/* <header className="App-header"> */}
+            {/* <img src={logo} className="App-logo" alt="logo" /> */}
+            {/* <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
                     Learn React
-                </a>
-            </header>
+                </a> */}
+            {/* </header> */}
+            <main id="main">
+                <NewOrderComponent></NewOrderComponent>
+            </main>
         </div>
     );
 };

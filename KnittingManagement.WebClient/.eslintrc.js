@@ -17,6 +17,8 @@ module.exports = {
         // e.g. "@typescript-eslint/explicit-function-return-type": "off",
         'no-use-before-define': ['warning', { functions: false, classes: true }],
         '@typescript-eslint/no-empty-interface': 'off',
+        '@typescript-eslint/no-empty-function': 'off',
+        'no-undef': 'off',
     },
     settings: {
         react: {
