@@ -1,13 +1,12 @@
 using System;
 using System.Threading.Tasks;
-using MailKit.Net.Smtp;
 using MimeKit;
 
 namespace NotificationService.Email.Builders
 {
     public sealed class MimeKitSmtpClientBuilder : IDisposable
     {
-        SmtpClient _client;
+        MailKit.Net.Smtp.SmtpClient _client;
         Task _connectTask;
         Task _authenticateTask;
         Task _sendTask;
@@ -15,7 +14,7 @@ namespace NotificationService.Email.Builders
 
         public MimeKitSmtpClientBuilder CreateSmtpClient()
         {
-            _client = new SmtpClient();
+            _client = new MailKit.Net.Smtp.SmtpClient();
 
             return this;
         }

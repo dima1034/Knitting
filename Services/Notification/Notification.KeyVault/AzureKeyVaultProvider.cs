@@ -1,31 +1,34 @@
-
-using System;
 using System.IO;
+using System.Reflection;
 using System.Threading.Tasks;
+using InfrastructureContracts;
 using Microsoft.Extensions.Configuration;
 
 namespace Notification.KeyVault
 {
-    public class AzureKeyVaultProvider
+    public class AzureKeyVaultProvider : IKeyValueProvider
     {
-        private static AzureKeyVault         _azureKeyVault;
-        private static IConfigurationSection _keyVaultSection;
+        private static AzureKeyVault _azureKeyVault;
 
         public AzureKeyVaultProvider()
         {
-            IConfigurationRoot builtConfig = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())
-                                                                       .AddJsonFile(
-                                                                            "appsettings.json",
-                                                                            optional: true,
-                                                                            reloadOnChange: true)
-                                                                       .Build();
+            var pathToBin = Path.GetDirectoryName(
+                Assembly.GetExecutingAssembly()
+                        .Location);
+
+            var builtConfig = new ConfigurationBuilder().SetBasePath(pathToBin)
+                                                        .AddJsonFile(
+                                                             "appsettings.json",
+                                                             optional: false,
+                                                             reloadOnChange: true)
+                                                        .Build();
+
+            IConfigurationSection keyVaultSection = builtConfig.GetSection("KeyVault");
 
             _azureKeyVault = new AzureKeyVault(
-                _keyVaultSection["baseUri"],
-                _keyVaultSection["appClientId"],
-                _keyVaultSection["appClientSecret"]);
-
-            _keyVaultSection = builtConfig.GetSection("KeyVault");
+                keyVaultSection["baseUri"],
+                keyVaultSection["appClientId"],
+                keyVaultSection["appClientSecret"]);
         }
 
         public async Task<string> GetValue(string key) => await _azureKeyVault.GetCachedSecret(key);

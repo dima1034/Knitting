@@ -5,7 +5,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Domain.fs" />
+        <Compile Include="Contracts.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Threading" Version="4.3.0" />
+      <PackageReference Include="System.Threading.Thread" Version="4.3.0" />
     </ItemGroup>
 
 </Project>

@@ -26,7 +26,7 @@ namespace NotificationService.Email.Builders
             return this;
         }
 
-        public SmtpClientBuilder Send(MailMessage message)
+        public SmtpClientBuilder Send(System.Net.Mail.MailMessage message)
         {
             _sendTask = _client.SendMailAsync(message);
 

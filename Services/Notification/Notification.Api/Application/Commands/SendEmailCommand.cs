@@ -1,7 +1,34 @@
+using System.Runtime.Serialization;
+using MediatR;
+
 namespace Notification.Api.Application.Commands
 {
-    public class SendEmailCommand
+    // DDD and CQRS patterns comment: Note that it is recommended to implement immutable Commands
+    // In this case, its immutability is achieved by having all the setters as private
+    // plus only being able to update the data just once, when creating the object through its constructor.
+    // References on Immutable Commands:  
+    // http://cqrs.nu/Faq
+    // https://docs.spine3.org/motivation/immutability.html 
+    // http://blog.gauffin.org/2012/06/griffin-container-introducing-command-support/
+    // https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties
+
+    [DataContract]
+    public class SendEmailCommand : IRequest
     {
+        [DataMember]
+        public string ReceiverEmail { get; private set; }
+
+        [DataMember]
+        public string Subject { get; private set; }
+
+        [DataMember]
+        public string Message { get; private set; }
         
+        public SendEmailCommand(string receiverEmail, string subject, string message)
+        {
+            Message = message;
+            Subject = subject;
+            ReceiverEmail = receiverEmail;
+        }
     }
 }

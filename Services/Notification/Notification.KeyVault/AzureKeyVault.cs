@@ -21,11 +21,11 @@ namespace Notification.KeyVault
             _keyVaultClient = keyVaultClient;
         }
 
-        public static string BaseUri { get; private set; }
+        private static string BaseUri { get; set; }
 
-        public static string ClientId { get; private set; }
+        private static string ClientId { get; set; }
 
-        public static string ClientSecret { get; private set; }
+        private static string ClientSecret { get; set; }
 
         private static KeyVaultClient _keyVaultClient = null;
 

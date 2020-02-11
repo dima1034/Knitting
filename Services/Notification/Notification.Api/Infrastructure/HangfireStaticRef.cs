@@ -2,7 +2,7 @@ using MediatR;
 
 namespace Notification.Api.Infrastructure
 {
-    public class HangfireHelpers
+    public class HangfireStaticRef
     {
         public static IMediator Mediator { private get; set; }
 

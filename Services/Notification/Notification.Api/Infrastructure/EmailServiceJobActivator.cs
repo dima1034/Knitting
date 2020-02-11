@@ -1,21 +1,21 @@
 using System;
 using Hangfire;
 using MediatR;
+using NotificationService.Email;
 
 namespace Notification.Api.Infrastructure
 {
-    public class MediatorJobActivator : JobActivator
+    public class EmailServiceJobActivator : JobActivator
     {
-        private readonly IMediator _mediator;
-
-        public MediatorJobActivator(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
-
-        public override object ActivateJob(Type type)
-        {
-            return _mediator;
-        }
+        // private readonly EmailSenderService _emailSenderService;
+        // public EmailServiceJobActivator(EmailSenderService service)
+        // {
+        //     _emailSenderService = service;
+        // }
+        //
+        // public override object ActivateJob(Type type)
+        // {
+        //     return _emailSenderService;
+        // }
     }
 }

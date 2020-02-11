@@ -1,8 +1,0 @@
-/Users/ostaphome/RiderProjects/Knitting/NotificationService.BoardNotificationService/bin/Debug/netcoreapp3.1/NotificationService.BoardNotificationService.deps.json
-/Users/ostaphome/RiderProjects/Knitting/NotificationService.BoardNotificationService/bin/Debug/netcoreapp3.1/NotificationService.BoardNotificationService.dll
-/Users/ostaphome/RiderProjects/Knitting/NotificationService.BoardNotificationService/bin/Debug/netcoreapp3.1/NotificationService.BoardNotificationService.pdb
-/Users/ostaphome/RiderProjects/Knitting/NotificationService.BoardNotificationService/obj/Debug/netcoreapp3.1/NotificationService.BoardNotificationService.csprojAssemblyReference.cache
-/Users/ostaphome/RiderProjects/Knitting/NotificationService.BoardNotificationService/obj/Debug/netcoreapp3.1/NotificationService.BoardNotificationService.AssemblyInfoInputs.cache
-/Users/ostaphome/RiderProjects/Knitting/NotificationService.BoardNotificationService/obj/Debug/netcoreapp3.1/NotificationService.BoardNotificationService.AssemblyInfo.cs
-/Users/ostaphome/RiderProjects/Knitting/NotificationService.BoardNotificationService/obj/Debug/netcoreapp3.1/NotificationService.BoardNotificationService.dll
-/Users/ostaphome/RiderProjects/Knitting/NotificationService.BoardNotificationService/obj/Debug/netcoreapp3.1/NotificationService.BoardNotificationService.pdb

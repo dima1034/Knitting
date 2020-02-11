@@ -3,44 +3,44 @@ using MimeKit;
 
 namespace NotificationService.Email.Builders
 {
-    public sealed class EmailMessageBuilder
+    public sealed class MailMessageBuilder
     {
-        private MailMessage Mail { get; set; }
+        private System.Net.Mail.MailMessage Mail { get; set; }
 
-        public EmailMessageBuilder CreateNewMimeMessage(MailPriority mailPriority)
+        public MailMessageBuilder CreateNewMimeMessage(MailPriority mailPriority)
         {
-            Mail = new MailMessage { IsBodyHtml = true, Priority = mailPriority };
+            Mail = new System.Net.Mail.MailMessage { IsBodyHtml = true, Priority = mailPriority };
             return this;
         }
 
-        public EmailMessageBuilder CreateSender(string email)
+        public MailMessageBuilder CreateSender(string email)
         {
             Mail.From = new MailAddress(email);
 
             return this;
         }
 
-        public EmailMessageBuilder CreateReceiver(string email)
+        public MailMessageBuilder CreateReceiver(string email)
         {
             Mail.To.Add(new MailAddress(email));
 
             return this;
         }
 
-        public EmailMessageBuilder SetSubject(string subject)
+        public MailMessageBuilder SetSubject(string subject)
         {
             Mail.Subject = subject;
 
             return this;
         }
 
-        public EmailMessageBuilder SetBody(string body)
+        public MailMessageBuilder SetBody(string body)
         {
             Mail.Body = body;
 
             return this;
         }
 
-        public MailMessage Get() => Mail;
+        public System.Net.Mail.MailMessage Get() => Mail;
     }
 }
