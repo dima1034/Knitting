@@ -1,0 +1,3 @@
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/EmailSender/src/obj/Debug/netcoreapp3.1/NotificationService.EmailSender.csprojAssemblyReference.cache
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/EmailSender/src/obj/Debug/netcoreapp3.1/NotificationService.EmailSender.AssemblyInfoInputs.cache
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/EmailSender/src/obj/Debug/netcoreapp3.1/NotificationService.EmailSender.AssemblyInfo.cs

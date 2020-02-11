@@ -1,0 +1,10 @@
+/Users/ostaphome/RiderProjects/Knitting.DataAccess.PostgresSQL/OrderService.DataAccess/bin/Debug/netcoreapp3.1/OrderService.DataAccess.deps.json
+/Users/ostaphome/RiderProjects/Knitting.DataAccess.PostgresSQL/OrderService.DataAccess/bin/Debug/netcoreapp3.1/OrderService.DataAccess.dll
+/Users/ostaphome/RiderProjects/Knitting.DataAccess.PostgresSQL/OrderService.DataAccess/bin/Debug/netcoreapp3.1/OrderService.DataAccess.pdb
+/Users/ostaphome/RiderProjects/Knitting.DataAccess.PostgresSQL/OrderService.DataAccess/obj/Debug/netcoreapp3.1/OrderService.DataAccess.fsprojAssemblyReference.cache
+/Users/ostaphome/RiderProjects/Knitting.DataAccess.PostgresSQL/OrderService.DataAccess/obj/Debug/netcoreapp3.1/OrderService.DataAccess.AssemblyInfoInputs.cache
+/Users/ostaphome/RiderProjects/Knitting.DataAccess.PostgresSQL/OrderService.DataAccess/obj/Debug/netcoreapp3.1/OrderService.DataAccess.AssemblyInfo.fs
+/Users/ostaphome/RiderProjects/Knitting.DataAccess.PostgresSQL/OrderService.DataAccess/obj/Debug/netcoreapp3.1/OrderService.DataAccess.dll
+/Users/ostaphome/RiderProjects/Knitting.DataAccess.PostgresSQL/OrderService.DataAccess/obj/Debug/netcoreapp3.1/OrderService.DataAccess.pdb
+/Users/ostaphome/RiderProjects/Knitting.DataAccess.PostgresSQL/OrderService.DataAccess/bin/Debug/netcoreapp3.1/OrderService.DataAccess.runtimeconfig.json
+/Users/ostaphome/RiderProjects/Knitting.DataAccess.PostgresSQL/OrderService.DataAccess/bin/Debug/netcoreapp3.1/OrderService.DataAccess.runtimeconfig.dev.json

@@ -1,0 +1,97 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/ostaphome/RiderProjects/Knitting/OrderService/Libs/OrderService.DataAccess.IntegrationTests/OrderService.DataAccess.IntegrationTests.fsproj",
+    "projectName": "OrderService.DataAccess.IntegrationTests",
+    "projectPath": "/Users/ostaphome/RiderProjects/Knitting/OrderService/Libs/OrderService.DataAccess.IntegrationTests/OrderService.DataAccess.IntegrationTests.fsproj",
+    "outputPath": "/Users/ostaphome/RiderProjects/Knitting/OrderService/Libs/OrderService.DataAccess.IntegrationTests/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "/Users/ostaphome/RiderProjects/Knitting/OrderService/Libs/NoMigrations -- OrderService.DataAccess/NoMigrations -- OrderService.DataAccess.fsproj": {
+            "projectPath": "/Users/ostaphome/RiderProjects/Knitting/OrderService/Libs/NoMigrations -- OrderService.DataAccess/NoMigrations -- OrderService.DataAccess.fsproj"
+          },
+          "/Users/ostaphome/RiderProjects/Knitting/OrderService/src/OrderService.DataAccess.csproj": {
+            "projectPath": "/Users/ostaphome/RiderProjects/Knitting/OrderService/src/OrderService.DataAccess.csproj"
+          }
+        }
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "EntityFrameworkCore.CommonTools": {
+          "target": "Package",
+          "version": "[2.0.2, )"
+        },
+        "FSharp.Core": {
+          "target": "Package",
+          "version": "[4.7.0, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.EntityFrameworkCore.Abstractions": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.EntityFrameworkCore.InMemory": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.EntityFrameworkCore.Relational": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "[16.5.0-preview-20200116-01, )"
+        },
+        "NUnit3TestAdapter": {
+          "target": "Package",
+          "version": "[3.16.1, )"
+        },
+        "nunit": {
+          "target": "Package",
+          "version": "[3.12.0, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+    }
+  }
+}

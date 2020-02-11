@@ -1,0 +1,98 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.EmailSender/NotificationService.EmailSender.csproj",
+    "projectName": "NotificationService.EmailSender",
+    "projectPath": "/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.EmailSender/NotificationService.EmailSender.csproj",
+    "outputPath": "/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.EmailSender/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {
+          "/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Contracts/NotificationService.Contracts.csproj": {
+            "projectPath": "/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Contracts/NotificationService.Contracts.csproj"
+          },
+          "/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Domain/NotificationService.Domain.fsproj": {
+            "projectPath": "/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Domain/NotificationService.Domain.fsproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "MailKit": {
+          "target": "Package",
+          "version": "[2.5.0, )"
+        },
+        "Microsoft.Azure.KeyVault": {
+          "target": "Package",
+          "version": "[3.0.5, )"
+        },
+        "Microsoft.Azure.KeyVault.Core": {
+          "target": "Package",
+          "version": "[3.0.5, )"
+        },
+        "Microsoft.Azure.KeyVault.Extensions": {
+          "target": "Package",
+          "version": "[3.0.5, )"
+        },
+        "Microsoft.Extensions.Configuration": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.Extensions.Configuration.Abstractions": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.Extensions.Configuration.Binder": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.Extensions.Configuration.Json": {
+          "target": "Package",
+          "version": "[3.1.1, )"
+        },
+        "Microsoft.IdentityModel.Clients.ActiveDirectory": {
+          "target": "Package",
+          "version": "[5.2.6, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+    }
+  }
+}

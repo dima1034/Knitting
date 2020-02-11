@@ -1,0 +1,16 @@
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/Domain/src/NotificationService.Domain/bin/Debug/netcoreapp3.1/NotificationService.Domain.deps.json
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/Domain/src/NotificationService.Domain/bin/Debug/netcoreapp3.1/NotificationService.Domain.dll
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/Domain/src/NotificationService.Domain/bin/Debug/netcoreapp3.1/NotificationService.Domain.pdb
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/Domain/src/NotificationService.Domain/obj/Debug/netcoreapp3.1/NotificationService.Domain.fsprojAssemblyReference.cache
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/Domain/src/NotificationService.Domain/obj/Debug/netcoreapp3.1/NotificationService.Domain.AssemblyInfoInputs.cache
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/Domain/src/NotificationService.Domain/obj/Debug/netcoreapp3.1/NotificationService.Domain.AssemblyInfo.fs
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/Domain/src/NotificationService.Domain/obj/Debug/netcoreapp3.1/NotificationService.Domain.dll
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/Domain/src/NotificationService.Domain/obj/Debug/netcoreapp3.1/NotificationService.Domain.pdb
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Domain/bin/Debug/netcoreapp3.1/NotificationService.Domain.deps.json
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Domain/bin/Debug/netcoreapp3.1/NotificationService.Domain.dll
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Domain/bin/Debug/netcoreapp3.1/NotificationService.Domain.pdb
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Domain/obj/Debug/netcoreapp3.1/NotificationService.Domain.fsprojAssemblyReference.cache
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Domain/obj/Debug/netcoreapp3.1/NotificationService.Domain.AssemblyInfoInputs.cache
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Domain/obj/Debug/netcoreapp3.1/NotificationService.Domain.AssemblyInfo.fs
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Domain/obj/Debug/netcoreapp3.1/NotificationService.Domain.dll
+/Users/ostaphome/RiderProjects/Knitting/NotificationService/Libs/NotificationService.Domain/obj/Debug/netcoreapp3.1/NotificationService.Domain.pdb

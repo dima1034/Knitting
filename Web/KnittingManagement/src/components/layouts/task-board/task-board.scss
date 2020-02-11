@@ -1,0 +1,50 @@
+#container {
+  height: calc(100vh);
+
+  #header {
+    height: 10%;
+
+    #banner {
+      height: 100%;
+      background: url("/blur-background.jpeg");
+      background-position: center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-size: 3em;
+        margin: 0;
+      }
+    }
+  }
+
+  #main {
+    // 90% at all - 2% of margin
+    height: 88%;
+    margin: 2% 10% 0% 10%;
+
+    #table {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 95%;
+      //   box-shadow: 0px 0px 4px 2px rgba(232, 232, 232, 1);
+      //   border-radius: 6px;
+
+      .tableColumn {
+        width: 100%;
+        // border: solid 1px ;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+        overflow-x: hidden;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import '~office-ui-fabric-react/dist/sass/_References.scss';
+
+#container {
+    // margin: 20%;
+    color: black;
+}
+
+.cardItemNumber {
+    color: white;
+    position: absolute;
+    font-family: 'San Francisco Bold';
+    font-size: 27px;
+    left: 50%;
+    top: 20%;
+    span {
+        text-align: center;
+        position: relative;
+        left: -50%;
+    }
+}
+
+.cardItem {
+    height: 140px;
+    width: 130px;
+
+    img {
+        border-radius: 2px 0 0 2px;
+    }
+}
+
+.created {
+    align-self: flex-end;
+}
+
+.cardSection {
+    width: 100%;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    ul > li {
+        font-weight: 400;
+        font-size: 18px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .dueDate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .cardSectionPriority {
+            border: solid 1px rgb(180, 180, 180);
+            border-radius: 2px;
+            height: 14px;
+            margin-right: 6px;
+
+            p {
+                color: rgb(180, 180, 180);
+                padding: 0 3px;
+                font-size: 12px;
+            }
+        }
+    }
+}

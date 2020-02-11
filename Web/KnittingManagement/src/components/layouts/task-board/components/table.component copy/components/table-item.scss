@@ -1,0 +1,77 @@
+#container {
+  display: grid;
+  grid-template-columns: 25% 1% 74%;
+}
+
+.itemCode,
+.itemInfo {
+  align-self: center;
+  text-align: center;
+  //   padding: 5px 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.itemDottedSplitter {
+  align-self: center;
+  height: 90%;
+  border-right: dotted 2px rgba(153, 153, 153, 0.5);
+}
+
+.itemCode {
+  -webkit-box-shadow: -2px 0px 8px -2px rgba(153, 153, 153, 1);
+  -moz-box-shadow: -2px 0px 8px -2px rgba(153, 153, 153, 1);
+  box-shadow: -2px 0px 8px -2px rgba(153, 153, 153, 1);
+
+  p {
+    color: red;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    font-family: "San Francisco Bold";
+  }
+
+  img {
+    width: 50px;
+    height: 20px;
+    object-fit: cover;
+  }
+}
+
+.itemInfo {
+  -webkit-box-shadow: 2px 0px 8px -2px rgba(153, 153, 153, 1);
+  -moz-box-shadow: 2px 0px 8px -2px rgba(153, 153, 153, 1);
+  box-shadow: 2px 0px 8px -2px rgba(153, 153, 153, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .overflowSet {
+    .ms-OverflowSet-item {
+      background-color: transparent;
+    }
+  }
+
+  ul {
+    padding: 0;
+    width: 90%;
+  }
+
+  ul > li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    > p:first-child {
+      font-weight: 800;
+    }
+
+    > p {
+      margin: 0;
+    }
+  }
+}
