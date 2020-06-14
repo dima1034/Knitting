@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import NewOrderComponent from './components/layouts/new-order/new-order.component';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
